@@ -20,3 +20,17 @@ var scrabbleWord = function(input_word) {
 
     return word_score;
 };
+
+$(document).ready(function() {
+    $("form#scrabble_word").submit(function(event) {
+        var input_word = $("input#input_word").val();
+        var result = scrabbleWord(input_word);
+
+        $(".result_score").text(result);
+
+
+        $("#result").show();
+        event.preventDefault();
+
+    });
+});

@@ -18,4 +18,11 @@ describe('scrabbleWord', function() {
     it("returns a score of 9 if input word is 'badge'", function() {
         expect(scrabbleWord("badge")).to.equal(9);
     });
+    it("returns a score of 8 if input word is 'fh' ", function() {
+        expect(scrabbleWord("fh")).to.equal(8);
+    });
+    it("returns a score of 16 if input word is 'zebra'", function() {
+        expect(scrabbleWord("zebra")).to.equal(16);
+    });
+
 });
