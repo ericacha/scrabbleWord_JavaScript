@@ -1,26 +1,47 @@
 <html>
     <head>
         <title>Scrabble Word Value Calculator</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
         <script src="js/jquery-1.11.2.js"></script>
         <script src="js/scripts.js"></script>
-        <title>Scrabble Word Value Calculator</title>
+        <title>Word Scrabbler</title>
     </head>
     <body>
-        <h1>Scrabble Word Value Calculator</h1>
-        <div class="container">
-            <form id="scrabble_word">
-                <div class="form-group">
-                    <label for="input_word">Enter a word and find out the score</label>
-                    <input id="input_word" type="text">
+        <div class="col-sm-12 container scrabble-page">
+            <img class="top-image" src="img/scrabble.jpg">
+            <h1>Word Scrabble <small>highest score wins</small></h1>
+
+            <br><br>
+            <div class="col-sm-6 container">
+                <form id="scrabble_word">
+                    <div class="form-group">
+                        <label for="input_word">Player 1: </label>
+                        <input id="input_word" placeholder="Enter A Word" type="text" required>
+                    </div>
+                    <button type="submit" class="btn btn-info">Get score!</button>
+                </form>
+                <div id="result">
+                    <p><h2>Your score is:</h2> <span class="result_score"></span>
+                    </p>
                 </div>
-                <button type="submit" class="btn">Get score!</button>
-            </form>
-            <div id="result">
-                <p>Your score is: <span class="result_score"></span>
-                </p>
             </div>
-        </div>
+            <!-- player 2-->
+            <div class="col-sm-6 container">
+                <form id="scrabble_word2">
+                    <div class="form-group">
+                        <label for="input_word2">Player 2: </label>
+                        <input id="input_word2" placeholder="Enter A Word" type="text" required>
+                    </div>
+                    <button type="success" class="btn btn-info">Get score!</button>
+                </form>
+                <div id="result2">
+                    <p><h2>Your score is: </h2><span class="result_score2"></span>
+                    </p>
+
+                    <button type="submit" class="play btn btn-info"><a href="http://www.erica-cha.com/scrabbleWord_JavaScript/scrabble_word.html">Play Again!</a></button>    
+                </div>
+            </div>
+      </div>
     </body>
 </html>

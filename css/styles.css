@@ -1,3 +1,43 @@
+body {
+   background-color: sandybrown;
+}
+
+.container {
+    text-align: center;
+}
+
 #result {
     display: none;
+}
+
+#result2 {
+    display:none;
+}
+
+img.top-image {
+    width: 100%;
+    margin-top: -25%;
+}
+
+span.result_score {
+    font-size: 45px;
+}
+
+span.result_score2 {
+    font-size: 45px;
+}
+
+label {
+    font-size: x-large;
+}
+
+form {
+  border: solid #fff;
+  border-radius: 25px;
+  padding: 2% 0 2%;
+}
+button.play {
+  display: table;
+  margin:-10% 0 0 -8%;
+
 }
